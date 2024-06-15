@@ -2,9 +2,6 @@
   background-color: #d7cccc42;
 }
 
-
-
-
 .box{
     background-color: aqua;
     min-height: 30px;
@@ -33,6 +30,9 @@
   text-decoration: line-through;
   font-size: 20px;
   color: #ccc;
+}
+.list-group-item.no-border{
+  border: none;
 }
 .tra-gop{
   background-color: #ccc;
