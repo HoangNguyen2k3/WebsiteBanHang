@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* #carousel2-container {
+  height: 400px;
+  width: 100%;
+} */
+
+.carousel {
+  height: 500px;
+  width: 100%;
+}
+
+.carousel-inner {
+  height: 100%;
+  display: flex;
+  flex-wrap: none;
+  overflow: hidden;
+}
+
+.carousel-item {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.carousel-item img {
+  object-fit: cover;
+}
