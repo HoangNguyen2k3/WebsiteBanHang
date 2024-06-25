@@ -53,6 +53,14 @@
         <div class="col-md-9">
           <div>
             <div>
+              <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Library
+                  </li>
+                </ol>
+              </nav>
               <h1 class="product-title">Product Name</h1>
               <a href="#evaluate" class="ps-4 sao-danh-gia text-warning">
                 <i class="fa-solid fa-star"></i>
@@ -153,9 +161,57 @@
           </div>
         </div>
         <div class="col-md-5 pt-5">
+          <span>
+            <div
+              class="btn-group"
+              role="group"
+              aria-label="Basic radio toggle button group"
+            >
+              <input
+                type="radio"
+                class="btn-check"
+                name="btnradio"
+                id="btnradio1"
+                autocomplete="off"
+                checked
+                onclick="change_cost()"
+              />
+              <label class="btn btn-outline-primary" for="btnradio1"
+                >128GB</label
+              >
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="btnradio"
+                id="btnradio2"
+                autocomplete="off"
+                onclick="change_cost()"
+              />
+              <label class="btn btn-outline-primary" for="btnradio2"
+                >256GB</label
+              >
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="btnradio"
+                id="btnradio3"
+                autocomplete="off"
+                onclick="change_cost()"
+              />
+              <label class="btn btn-outline-primary" for="btnradio3"
+                >512GB</label
+              >
+            </div>
+          </span>
           <p class="product-price">
-            <span class="product-price-old">40.000.000đ</span>
-            <span class="product-price-new">30.000.000đ</span>
+            <span class="product-price-old" id="old-price-opt"
+              >40.000.000đ</span
+            >
+            <span class="product-price-new" id="new-price-opt"
+              >30.000.000đ</span
+            >
             <span class="tra-gop"> Trả góp 0% </span>
           </p>
 
@@ -686,5 +742,6 @@
       </div>
     </footer>
     <script src="./javascript/js/bootstrap.bundle.min.js"></script>
+    <script src="./javascript/myScript.js"></script>
   </body>
 </html>

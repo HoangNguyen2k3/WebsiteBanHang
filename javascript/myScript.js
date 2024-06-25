@@ -60,4 +60,23 @@ function checkedXuatHoaDon() {
     }
 }
 
+function change_cost() {
+    let opt1 = document.getElementById("btnradio1");
+    let opt2 = document.getElementById("btnradio2");
+    let opt3 = document.getElementById("btnradio3");
+    let old_price = document.getElementById('old-price-opt');
+    let new_price = document.getElementById('new-price-opt');
+    if(opt1.checked){
+        old_price.textContent = '40.000.000đ';
+        new_price.textContent = '30.000.000đ';
+    }
+     else if(opt2.checked){
+        old_price.textContent = '45.000.000đ';
+        new_price.textContent = '35.000.000đ';
+    }else{
+        old_price.textContent = '50.000.000đ';
+        new_price.textContent = '40.000.000đ';
+    }
 
+
+}
