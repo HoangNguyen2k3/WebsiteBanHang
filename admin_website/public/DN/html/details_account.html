@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <link rel="stylesheet" href="{{asset('DN/CSS/style.css')}}" />
+    <link
+      rel="stylesheet"
+      href="{{asset('DN/assets/fontawesome-free-6.5.2-web/fontawesome-free-6.5.2-web/css/fontawesome.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{asset('DN/assets/fontawesome-free-6.5.2-web/fontawesome-free-6.5.2-web/css/brands.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{asset('DN/assets/fontawesome-free-6.5.2-web/fontawesome-free-6.5.2-web/css/solid.css')}}"
+    />
+    <!-- Bootstrap CSS -->
+    <link href="{{asset('DN/CSS/css/bootstrap.min.css')}}" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a href="#" class="navbar-brand">Shopee</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Categories</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container mt-5">
+      <div class="card">
+        <div class="card-header bg-primary text-white">
+          <h3>Chi tiết thông tin khách hàng</h3>
+        </div>
+        <div class="card-body">
+          <div class="row mb-3">
+            <div class="col-4 font-weight-bold">Tên đăng nhập:</div>
+            <div class="col-8">username_here</div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-4 font-weight-bold">Họ và tên:</div>
+            <div class="col-8">full_name_here</div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-4 font-weight-bold">Email:</div>
+            <div class="col-8">email_here@example.com</div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-4 font-weight-bold">Số điện thoại:</div>
+            <div class="col-8">phone_number_here</div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-4 font-weight-bold">Giới tính:</div>
+            <div class="col-8">gender_here</div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-4 font-weight-bold">Ngày sinh:</div>
+            <div class="col-8">birthdate_here</div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <button class="btn btn-secondary" onclick="window.history.back()">
+            Quay lại
+          </button>
+          <button class="btn btn-secondary">Chỉnh sửa</button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-light py-4 mt-5">
+      <div class="container text-center">
+        <p>&copy; 2024 Shopee Clone. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="{{asset('DN/javascript/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{asset('DN/javascript/myScript.js')}}"></script>
+  </body>
+</html>
